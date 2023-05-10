@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Ubuntu:wght@700&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+
+
+body {
+    background:black;
+    color:white;
+    display:flex;
+    flex-direction:column;   
+    gap:10px;
+}
+
+
+.image_container{
+    display:none;
+}
+
+
+.Xenzia_box{
+    padding:0 ;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.Xenzia_box header{
+    padding:30px;
+    width:100%;
+    background:#F96E46;
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+
+.Xenzia_box header h1{
+    text-transform:uppercase;
+    text-align:center;
+    font-size:1.8rem;
+    font-family:900;
+}
+
+
+.Xenzia_box p{
+    text-align:left;
+    font-size:1rem;
+    padding:10px;
+    font-weight:bold;
+    background-color:#545863;
+    font-family: 'Tangerine', serif;
+    line-height:2;
+    text-indent:20px;
+    user-select:none;
+}
+
+
+.Xenzia_box p::first-letter{
+    
+    font-size:1.5rem;
+    font-weight:900;
+    
+
+    
+}
+
+
+.container{
+    width:95%;
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    position:relative;
+    gap:10px; 
+ }
+ 
+ 
+
+
+
+.image_container{
+    
+    width:95%;
+    height:250px;
+    border-radius:10px;
+    
+    
+    
+}
+
+
+img{
+    height: 100%;
+    border-radius:10px;
+    
+}
+
+#fade{
+    animation:fade .6s ease-out ;
+}
+
+@keyframes fade{
+    from{opacity:0.3;}
+    to{opacity:0.3;}
+}
+
+ #prev{
+    position:absolute;
+    left:11px;
+    padding:10px;
+    font-size:2rem;
+    font-weight:900;
+    transition:0.6s ease;
+    cursor:pointer;
+    color:#00E8FC;
+    user-select:none;
+}
+
+#Next{
+    position:absolute ;
+    right:11px;
+    padding:10px;
+    font-size:2rem;
+    font-weight:900;
+    transition:0.6s ease;
+    cursor:pointer;
+    color:#00E8FC;
+    user-select:none;
+}
+
+
+#prev:hover ,#Next:hover{
+    
+     background:rgba(84, 88, 99,0.5);
+        
+}
+
+
+.dots{
+    padding:5px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(51, 49, 48,0.9);
+    display:inline-block;
+    
+}
+
+.active{
+   background-color:#00E8FC;
+   transition:1.6s ease;
+   box-shadow: 0px 0px 10px 2px white;
+
+}
+
+
+
+
+.second_box header{
+    background:#F9C846;
+    
+}
+
+
+
+.second_box header h1 #question_mark{
+    font-size:2.3rem;
+    font-weight:900;
+    animation:tilt 3s infinite 5s linear;
+
+}
+
+
+@keyframes tilt{
+    
+    from{transform:rotateY(180deg);}
+    to{transform:rotateX(0deg);}
+    
+    
+    
+}
